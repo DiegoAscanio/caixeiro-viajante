@@ -131,7 +131,7 @@ class TSP:
             # visitados e adiciona a distancia de v a u ao custo do caminho
             # solucao
             visitados.append(vizinho_mais_proximo)
-            custo_caminho += self.g.adjacencias[u][vizinho_mais_proximo]
+            custo_caminho += distancia_vizinho_mais_proximo
         
         # finaliza o caminho, fechando o ciclo do passeio, retornando para a origem
         visitados.append(self.origem)
